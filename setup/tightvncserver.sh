@@ -8,7 +8,7 @@ apt_get_install(){
 
 # setup dotfiles
 setup_dotfiles(){
-	sudo cp ./dotfiles/vncboot /etc/init.d/vncboot
+	sudo cp ../dotfiles/vncboot /etc/init.d/vncboot
 	sudo update-rc.d -f lightdm remove
 	sudo update-rc.d vncboot defaults
 }
